@@ -23,5 +23,6 @@ export class RegisterController {
         }
 
         return data
+    }
     
 }
