@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <title>PostApp</title>
 </head>
 <body>
@@ -17,25 +19,27 @@
     </div>
     
   <!--Form -->
-    <div class="form flex flex-col w-60 mx-auto mt-5">
+    <form id="form-register" class="form flex flex-col w-60 mx-auto mt-5">
       
       
       <label for="Email Name" class = "text-sm mt-5 text-gray-400 bold">Email</label>
-      <input type="text" id="emailInput" class="border-b focus:border-purple-400 outline-none text-sm pb-1">
+      <input type="text" id="email-input" class="border-b focus:border-purple-400 outline-none text-sm pb-1">
       
       <label for="Password" class = "text-sm mt-5 text-gray-400 bold">Password </label>
-      <input type="password" id="pssInput" class="border-b focus:border-purple-400 outline-none text-sm pb-1" >
+      <input type="password" id="pss-input" class="border-b focus:border-purple-400 outline-none text-sm pb-1" >
       
   <!-- Button -->
-      <button class = "bg-indigo-600 text-gray-50 px-10 py-3 rounded-lg mt-5 shadow mb-2" >Get Started</button>   
+      <button type="submit" class = "bg-indigo-600 text-gray-50 px-10 py-3 rounded-lg mt-5 shadow mb-2" >Get Started</button>   
    
   <!--Terms -->
 
     
     
-  </div>
+  </form>
   
   <!-- Sign Up End -->
+
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
 

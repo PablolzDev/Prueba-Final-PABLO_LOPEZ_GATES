@@ -11,5 +11,10 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "sweetalert2": "^11.12.4"
   }
 }

@@ -7,8 +7,8 @@ export class RegisterController {
         this.url = url
     }
 
-    async Register(dataRegister:IRegister, endPoint: string){
-        const response = await fetch(`${this.url}${endPoint}`,{
+    async Register(dataRegister:IRegister, endPoint: string, endPoint2: string){
+        const response = await fetch(`${this.url}/${endPoint}/${endPoint2}`,{
             method: 'POST',
             headers: {
                 'Content-type' : 'Application/json'
@@ -19,7 +19,7 @@ export class RegisterController {
 
         const data = response.json();
         if (response.status != 201) {
-            throw new Error("No se puede publicar ciudad");
+            throw new Error("Can't create User");
         }
 
         return data
