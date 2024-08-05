@@ -1,7 +1,7 @@
 import { IPost } from "../model/IPost";
 
 
-
+//Render function Card
 export const createPostCard = (post: IPost): HTMLElement => {
     let {title,body,creationDate,status,platform,postUrl,multimediaUrl} = post
     const cardContainer = document.createElement('div');

@@ -1,4 +1,5 @@
-const logout = document.querySelector("#log-out") as HTMLButtonElement
+const logout = document.querySelector("#log-out") as HTMLButtonElement //I catch the log out button
+
 
 document.addEventListener("DOMContentLoaded", () => {
     if(!sessionStorage.getItem("gmailToken")){
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
+//This is the event to remove the session storage and close the login
 logout?.addEventListener("click", () =>{
     
     sessionStorage.removeItem("gmailToken")
