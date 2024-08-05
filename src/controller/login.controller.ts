@@ -1,4 +1,5 @@
-import { ILogin } from "../model/ILogin";
+import { ILogin } from "../model/ILogin";// We need import the model
+
 
 export class loginController {
     url: string;
@@ -7,6 +8,7 @@ export class loginController {
         this.url = url
     }
 
+    //this method excute the login
     async login(data:ILogin, endPoint: string, endPoint2:string){
         const response = await fetch(`${this.url}/${endPoint}/${endPoint2}`,{
             method: 'POST',
